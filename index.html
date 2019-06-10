@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- bootstrap -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!-- css stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -15,9 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/6389bf8013.js"></script>
-    
+
     <title>Camerone Stoney</title>
 </head>
+
 <body>
     <!-- horizontal navbar -->
     <nav class="navbar">
@@ -25,9 +23,9 @@
             <a href="#" id="slide-open" onclick="openSlideMenu()">
                 <!-- place the menu symbol here dems are 30X30 -->
                 <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="#ccc5b9" stroke-width="5"/>
-                    <path d="M0,14 30,14" stroke="#ccc5b9" stroke-width="5"/>
-                    <path d="M0,23 30,23" stroke="#ccc5b9" stroke-width="5"/>
+                    <path d="M0,5 30,5" stroke="#ccc5b9" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#ccc5b9" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#ccc5b9" stroke-width="5" />
                 </svg>
             </a>
         </span>
@@ -40,7 +38,7 @@
     </nav>
     <!-- sliding Sidebar -->
     <div id="side-menu" class="side-nav">
-        <a href="#"  class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Portfolio</a>
@@ -48,24 +46,67 @@
     </div>
     <!-- main section -->
     <div id="content-section">
-        <h1>Camerone Stoney</h1>
+        <div id="landing-section">
+            <h1>Camerone Stoney</h1>
+        </div>
+
+        <!-- about me content -->
+        <div id="about-me-content">
+            <h1 class="section_header">About</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis orci lacus, ut dignissim
+                mauris tincidunt vitae. Morbi vitae velit volutpat, consectetur nisl et, iaculis massa. Sed gravida
+                ligula mi, quis luctus justo posuere vitae. Quisque convallis hendrerit neque at varius. Maecenas justo
+                massa, condimentum eget porttitor non, ultricies in purus. Curabitur blandit a metus sit amet ornare.
+                Fusce ac leo fermentum, condimentum erat in, tempor urna. Quisque elit eros, luctus eget egestas varius,
+                egestas quis massa. Quisque in est non purus fringilla dapibus quis quis est. Curabitur lobortis velit
+                leo, efficitur ultricies nisi vestibulum ac. Quisque faucibus molestie velit vitae gravida. Sed sodales,
+                velit ultricies eleifend aliquam, nunc est mattis ante, vitae volutpat mi arcu nec ligula. Phasellus
+                eget sem at enim dictum consequat. Sed luctus efficitur vehicula.</h2>
+        </div>
+        <!-- Portolio content -->
+        <div id="portfolio-content">
+            <h1 class="section_header">Portfolio</h1>
+            
+            <a href="https://volksrat71.github.io/project-1/project-1/index.html">
+                <img src="assets/images/roadtriperzzz.png" alt="road trip website">
+                <p class="image_title" >RoadtriperZzz</p>
+            </a>
+
+            <a href="https://cjstoney.github.io/phychic_letter_game/">
+                <img src="assets/images/psych_game.png" alt="psychic guessing game">
+                <p class="image_title" >Psychic Guessing Game</p>
+            </a>
+
+            <a href="https://cjstoney.github.io/crystal_collector_game/">
+                <img src="assets/images/crystal_collectors.png" alt="road trip website">
+                <p class="image_title" >Crystal Collector Game</p>
+            </a>
+        </div>
+        <!-- Contact content -->
+        <div id="contact-content">
+            <h1 class="section_header">Contact</h1>
+
+        </div>
+
+
+
     </div>
 
     <script>
-        function openSlideMenu(){
+        function openSlideMenu() {
 
-            document.getElementById('slide-open').style.width='250px';
-            document.getElementById('content-section').style.marginLeft='250px';
-
-        }
-
-        function closeSlideMenu(){
-
-            document.getElementById('side-menu').style.width='0';
-            document.getElementById('content-section').style.marginLeft='0';
+            document.getElementById('slide-open').style.width = '250px';
+            document.getElementById('content-section').style.marginLeft = '250px';
 
         }
-        </script>
+
+        function closeSlideMenu() {
+
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('content-section').style.marginLeft = '0';
+
+        }
+    </script>
 </body>
 <!-- linkn to js file -->
 <!-- <script type="text/js" src="assets/app.js"></script> -->

@@ -32,9 +32,9 @@ body{
 /* side bar */
 .side-nav{
     height:100%;
-    width:0;
+    /* width:0; */
     position:fixed;
-    z-index:1;
+    /* z-index:1; */
     top:77px;
     left:0;
     background-color:#313a3e;
@@ -73,7 +73,7 @@ body{
 }
 
 
-@media(max-width:568px){
+/* @media(max-width:568px){
     .navbar-nav{
         display:none;
     }
@@ -82,4 +82,4 @@ body{
     .open-slide{
         display:none;
     }
-}
+} */
