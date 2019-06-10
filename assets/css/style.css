@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:white;
+    color:#ccc5b9;
+    background-color:#1c1c21;
 }
 
 .navbar{
@@ -32,9 +33,9 @@ body{
 /* side bar */
 .side-nav{
     height:100%;
-    /* width:0; */
+    width:0;
     position:fixed;
-    /* z-index:1; */
+    z-index:1;
     top:77px;
     left:0;
     background-color:#313a3e;
@@ -70,6 +71,19 @@ body{
     padding: 20px;
     overflow: hidden;
     width:100%;
+}
+
+#landing-section{
+    height: 100%;
+}
+
+#portfolio-content img{
+    max-width: 25%;
+    display:block;
+}
+
+#portfolio-content a{
+    display: block;
 }
 
 

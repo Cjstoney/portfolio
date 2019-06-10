@@ -20,7 +20,7 @@
     <!-- horizontal navbar -->
     <nav class="navbar">
         <span class="open-slide">
-            <a href="#" id="slide-open" onclick="openSlideMenu()">
+            <a href="#" id="slide-open">
                 <!-- place the menu symbol here dems are 30X30 -->
                 <svg width="30" height="30">
                     <path d="M0,5 30,5" stroke="#ccc5b9" stroke-width="5" />
@@ -44,7 +44,9 @@
         <a href="#">Portfolio</a>
         <a href="#">Contact</a>
     </div>
-    <!-- main section -->
+
+
+    <!-------------------- main section ---------------------->
     <div id="content-section">
         <div id="landing-section">
             <h1>Camerone Stoney</h1>
@@ -63,6 +65,7 @@
                 velit ultricies eleifend aliquam, nunc est mattis ante, vitae volutpat mi arcu nec ligula. Phasellus
                 eget sem at enim dictum consequat. Sed luctus efficitur vehicula.</h2>
         </div>
+
         <!-- Portolio content -->
         <div id="portfolio-content">
             <h1 class="section_header">Portfolio</h1>
@@ -93,22 +96,23 @@
     </div>
 
     <script>
-        function openSlideMenu() {
+        // function openSlideMenu() {
 
-            document.getElementById('slide-open').style.width = '250px';
-            document.getElementById('content-section').style.marginLeft = '250px';
+        //     document.getElementById('slide-open').style.width = '250px';
+        //     document.getElementById('side-menu').style.width = '250px'
+        //     document.getElementById('content-section').style.marginLeft = '250px';
 
-        }
+        // }
 
-        function closeSlideMenu() {
+        // function closeSlideMenu() {
 
-            document.getElementById('side-menu').style.width = '0';
-            document.getElementById('content-section').style.marginLeft = '0';
+        //     document.getElementById('side-menu').style.width = '0';
+        //     document.getElementById('content-section').style.marginLeft = '0';
 
-        }
+        // }
     </script>
 </body>
 <!-- linkn to js file -->
-<!-- <script type="text/js" src="assets/app.js"></script> -->
+<script type="text/js" src="assets/app.js"></script>
 
 </html>
