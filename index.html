@@ -10,8 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/6389bf8013.js"></script>
+
 
     <title>Camerone Stoney</title>
 </head>
@@ -21,7 +20,6 @@
     <nav class="navbar">
         <span class="open-slide">
             <a href="#" id="slide-open">
-                <!-- place the menu symbol here dems are 30X30 -->
                 <svg width="30" height="30">
                     <path d="M0,5 30,5" stroke="#ccc5b9" stroke-width="5" />
                     <path d="M0,14 30,14" stroke="#ccc5b9" stroke-width="5" />
@@ -30,19 +28,21 @@
             </a>
         </span>
         <ul class="navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#landing-section">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+
     <!-- sliding Sidebar -->
     <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="#" class="btn-close" id="slide-close">&times;</a>
+        <a href="#landing-section">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </div>
 
 
@@ -54,7 +54,7 @@
 
         <!-- about me content -->
         <div id="about-me-content">
-            <h1 class="section_header">About</h1>
+            <h1 class="section_header" id="about">About</h1>
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis orci lacus, ut dignissim
                 mauris tincidunt vitae. Morbi vitae velit volutpat, consectetur nisl et, iaculis massa. Sed gravida
                 ligula mi, quis luctus justo posuere vitae. Quisque convallis hendrerit neque at varius. Maecenas justo
@@ -68,51 +68,41 @@
 
         <!-- Portolio content -->
         <div id="portfolio-content">
-            <h1 class="section_header">Portfolio</h1>
+            <h1 class="section_header" id="portfolio">Portfolio</h1>
+
+            <div class="project-container">
+                <a href="https://volksrat71.github.io/project-1/project-1/index.html">
+                    <img src="assets/images/roadtriperzzz.png" alt="road trip website">
+                    <p class="image_title">RoadtriperZzz</p>
+                </a>
             
-            <a href="https://volksrat71.github.io/project-1/project-1/index.html">
-                <img src="assets/images/roadtriperzzz.png" alt="road trip website">
-                <p class="image_title" >RoadtriperZzz</p>
-            </a>
 
-            <a href="https://cjstoney.github.io/phychic_letter_game/">
-                <img src="assets/images/psych_game.png" alt="psychic guessing game">
-                <p class="image_title" >Psychic Guessing Game</p>
-            </a>
+            
+                <a href="https://cjstoney.github.io/phychic_letter_game/">
+                    <img src="assets/images/psych_game.png" alt="psychic guessing game">
+                    <p class="image_title">Psychic Guessing Game</p>
+                </a>
+            
 
-            <a href="https://cjstoney.github.io/crystal_collector_game/">
-                <img src="assets/images/crystal_collectors.png" alt="road trip website">
-                <p class="image_title" >Crystal Collector Game</p>
-            </a>
+            
+                <a href="https://cjstoney.github.io/crystal_collector_game/">
+                    <img src="assets/images/crystal_collectors.png" alt="road trip website">
+                    <p class="image_title">Crystal Collector Game</p>
+                </a>
+            </div>
         </div>
+
+
         <!-- Contact content -->
         <div id="contact-content">
-            <h1 class="section_header">Contact</h1>
+            <h1 class="section_header" id="contact">Contact</h1>
 
         </div>
-
-
-
     </div>
 
-    <script>
-        // function openSlideMenu() {
 
-        //     document.getElementById('slide-open').style.width = '250px';
-        //     document.getElementById('side-menu').style.width = '250px'
-        //     document.getElementById('content-section').style.marginLeft = '250px';
-
-        // }
-
-        // function closeSlideMenu() {
-
-        //     document.getElementById('side-menu').style.width = '0';
-        //     document.getElementById('content-section').style.marginLeft = '0';
-
-        // }
-    </script>
 </body>
 <!-- linkn to js file -->
-<script type="text/js" src="assets/app.js"></script>
+<script src="assets/app.js"></script>
 
 </html>
