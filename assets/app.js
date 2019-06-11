@@ -1,6 +1,5 @@
 console.log("working");
 
-
     $('#slide-open').on('click', function(){
         document.getElementById('slide-open').style.width = '250px';
         document.getElementById('side-menu').style.width = '250px'
