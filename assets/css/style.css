@@ -113,6 +113,10 @@ body{
     margin:20px;
 }
 
+p .image-title{
+    text-decoration: none;
+}
+
 .work p {
     border-bottom:0;
     background-color:#313a3e;
