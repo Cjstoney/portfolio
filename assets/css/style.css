@@ -110,15 +110,26 @@ a:hover{
 img{
     max-width:100%;
 }
+img:hover{
+    opacity:0.5;
+}
+
+.top-row img{
+    height:360px;
+    padding:0;
+    width:100%;
+}
 
 .project-a{
     position: relative;
 }
 
 .image_title{
-    background:blue;
+    font-size:32px;
+    background:#1c1c21;
+    color:#eb5e28;
     position:absolute;
-    left: 0;
+    left: 25%;
     bottom: 20px;
 }
 
