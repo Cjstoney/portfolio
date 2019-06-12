@@ -1,3 +1,13 @@
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:focus{
+    text-decoration:none;
+    
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     color:#ccc5b9;
@@ -70,6 +80,7 @@ a:hover{
     color:#eb5e28;
 }
 .section_header{
+    padding-top:20px;
     font-size:66px;
     letter-spacing:30px;
     color:#eb5e28;
@@ -93,21 +104,30 @@ a:hover{
 }
 
 /* Portfolio items */
-.carousel-item .active #image_title{
-    color:#ccc5b9;
-    text-decoration: none;
-    background-color:#313a3e
+.col-xl-6{
+    padding:0;
 }
-p .image-title{
-    text-decoration: none;
+img{
+    max-width:100%;
 }
 
-.work p {
+.project-a{
+    position: relative;
+}
+
+.image_title{
+    background:blue;
+    position:absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+/* .work p {
     border-bottom:0;
     background-color:#313a3e;
     color:#ccc5b9;
     text-align:center;
-}
+} */
 
 /* about section */
 #about-me-content{
@@ -124,12 +144,12 @@ p .image-title{
     font-size:32px;
     line-height:48px;
 }
-.about-content{
+/* .about-content{
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-gap:20px;
     margin:20px;
-}
+} */
 @media(max-width:568px){
     .navbar-nav{
         display:none;
